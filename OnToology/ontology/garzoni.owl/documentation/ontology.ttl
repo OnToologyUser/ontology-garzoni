@@ -1,0 +1,787 @@
+@prefix :        <http://localhost:8080/garzoni/ontology#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix grz:     <http://localhost:8080/garzoni/ontology#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isNephewOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#identifiedPerson>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/vtm/core#PersonMention> ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#personDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType>
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#ConditionType> ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (<http://vocab.dhlab.epfl.ch/garzoni#accomodation> <http://vocab.dhlab.epfl.ch/garzoni#clothing> <http://vocab.dhlab.epfl.ch/garzoni#genericExpenses> <http://vocab.dhlab.epfl.ch/garzoni#personalCare>)
+              ] .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Contract>
+      a       owl:Class ;
+      rdfs:comment "A legal agreement between parties that set up the conditions of an employment. In the Garzoni project, this corresponds to an apprenticeship contract between a master and an apprentice with, often, the caution of a guarantor."@en ;
+      rdfs:label "Contract"^^xsd:string , "Contrat"@fr .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isStepfatherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Patronymic2>
+      a       owl:Class ;
+      rdfs:comment "Patronymic 2"@en , """Part of the name of a person whic refers to one of his/her relative. In (former) Italian family names, the patronymic is preceded by the word \"di\" or \"quondam\", e.g. \"Federico Di Garla\".
+\"Di\" stands for \"figlio/figlia di\" or \"marito/moglie di\" meaning the son/daughter or husband/wife of a living person. \"Quondam\" means the same but for a person who ceased to live."""^^xsd:anyURI ;
+      rdfs:label "Patronyme 2"@fr ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#progressive>
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isConditionOf>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#Condition> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#Contract> ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#contractProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#period>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#HostingCondition> , <http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition> ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasGeographicalOrigin>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/vtm/core#PersonMention> , <http://vocab.dhlab.epfl.ch/vtm/core#Person> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#PlaceMention> ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#contractProperties>
+      a       owl:ObjectProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasWorkshop>
+      a       owl:ObjectProperty ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention> ;
+      owl:inverseOf <http://vocab.dhlab.epfl.ch/garzoni#isWorkshopOf> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isSisterInLawOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Nickname>
+      a       owl:Class ;
+      rdfs:label "Nickname"@en , "Surnom"@fr ;
+      rdfs:seeAlso "http://xmlns.com/foaf/0.1/nick"^^xsd:anyURI ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGranddaughterOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasProfession>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/vtm/core#PersonMention> , <http://vocab.dhlab.epfl.ch/vtm/core#Person> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#ProfessionMention> ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#ProfessionMention>
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/vtm/core#EntityMention> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#PersonAppellation>
+      a       owl:Class ;
+      rdfs:comment "The name of a person entity."^^xsd:string ;
+      rdfs:seeAlso "http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#E41"^^xsd:anyURI ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty <http://vocab.dhlab.epfl.ch/vtm/core#hasComponent> ;
+                owl:someValuesFrom <http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent>
+              ] .
+
+<http://vocab.dhlab.epfl.ch/garzoni#personDataProperties>
+      a       owl:DatatypeProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasBusinessWith>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#businessRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasSalaryProgression>
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Restriction ;
+                owl:allValuesFrom <http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition> ;
+                owl:onProperty <http://vocab.dhlab.epfl.ch/garzoni#conditionType>
+              ] ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#SalaryProgression> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Patronymic1>
+      a       owl:Class ;
+      rdfs:comment """Part of the name of a person which refers to one of his/her immediate relative. In (former) Italian family names, the patronymic is preceded by the word \"di\" or \"quondam\", e.g. \"Federico Di Garla\". 
+\"Di\" stands for \"figlio/figlia di\" or \"marito/moglie di\" meaning the son/daughter or husband/wife of a living person. \"Quondam\" means the same but for a person who ceased to live."""@en ;
+      rdfs:label "Patronyme 1"@fr , "Patronym 1"@en ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Condition>
+      a       owl:Class ;
+      rdfs:comment "Any condition or terms stated in a apprenticeship contract."^^xsd:anyURI ;
+      rdfs:label "Condition"@en , "Condition"@fr .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGrandfatherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/vtm/core#Entity>
+      a       owl:Class .
+
+<http://vocab.dhlab.epfl.ch/garzoni#inSestiere>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#PlaceMention> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#Sestiere> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isAdoptedBy>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#ChargeMention>
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/vtm/core#EntityMention> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#SalaryProgression>
+      a       owl:Class ;
+      rdfs:comment "A complex salary object composed of several salary components representing different stages of a salary."@en ;
+      rdfs:label "Progression de salaire"@fr , "Salary progression"@en ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty <http://vocab.dhlab.epfl.ch/vtm/core#hasComponent> ;
+                owl:someValuesFrom <http://vocab.dhlab.epfl.ch/garzoni#SalaryComponent>
+              ] .
+
+<http://vocab.dhlab.epfl.ch/garzoni#ageText>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/vtm/core#PersonMention> ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#personDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#ConditionType>
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#Type> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isColleagueOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#businessRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#SalaryComponent>
+      a       owl:Class ;
+      rdfs:comment "A salary object which enters the composition of a salary progression."^^xsd:string ;
+      rdfs:label "Composant de salaire"@fr , "Salary component"@en .
+
+<http://vocab.dhlab.epfl.ch/garzoni#flee>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#EventType> ;
+      rdfs:comment "An event which corresponds to the flee of an apprentice during its apprenticeship."@en ;
+      rdfs:label "Flee"@en , "Fugue"@fr .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isAuntOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#cites>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#Contract> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#Contract> ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#documentRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention>
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/vtm/core#EntityMention> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#inParish>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#PlaceMention> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#Parish> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#clothingType>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#HostingCondition> ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isUncleOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isDaughterOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isMotherInLawOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandmotherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties>
+      a       owl:ObjectProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Place>
+      a       owl:Class ;
+      rdfs:label "Lieu"@fr , """Place
+"""^^xsd:string ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/vtm/core#Entity> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent>
+      a       owl:Class ;
+      rdfs:comment "This class comprises elements which compose the appellation or name of an entity."@en ;
+      rdfs:label "Composant d'appellation"@fr , "Appellation Component"@en .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasFunction>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/vtm/core#PersonMention> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#RoleType> ;
+      rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#totalAmount>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition> ;
+      rdfs:range xsd:integer ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#personalCare>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#accomodation>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#paidInGoods>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#HostingCondition> , <http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition> ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#master>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#RoleType> ;
+      rdfs:comment "A role or function which a person has while being a master duting an apprenticship."@en .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasMargin>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#Contract> ;
+      rdfs:range xsd:boolean .
+
+<http://vocab.dhlab.epfl.ch/garzoni#periodization>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#HostingCondition> , <http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition> ;
+      rdfs:range
+              [ a       rdfs:Datatype ;
+                owl:oneOf
+                        [ a       rdf:List ;
+                          rdf:first "annual" ;
+                          rdf:rest
+                                  [ a       rdf:List ;
+                                    rdf:first "daily" ;
+                                    rdf:rest
+                                            [ a       rdf:List ;
+                                              rdf:first "monthly" ;
+                                              rdf:rest
+                                                      [ a       rdf:List ;
+                                                        rdf:first "none" ;
+                                                        rdf:rest
+                                                                [ a       rdf:List ;
+                                                                  rdf:first "semestral" ;
+                                                                  rdf:rest
+                                                                          [ a       rdf:List ;
+                                                                            rdf:first "weekly" ;
+                                                                            rdf:rest
+                                                                                    [ a       rdf:List ;
+                                                                                      rdf:first "whole period" ;
+                                                                                      rdf:rest ()
+                                                                                    ]
+                                                                          ]
+                                                                ]
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Collectivename>
+      a       owl:Class ;
+      rdfs:comment "In Garzoni context, this class covers expressions used to refer to collective entities. Typical examples include: \"et fratelli\" (and brothers), \"e fioli\", \"et sua consorte\" ."@en ;
+      rdfs:label "Collective name"@en , "Nom collectif"@fr ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#relatedContract>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#contractProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isSonOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#sestiere_literal>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#PlaceMention> ;
+      rdfs:range xsd:string .
+
+<http://vocab.dhlab.epfl.ch/garzoni#salary>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#FinancialConditionType> ;
+      rdfs:comment "In a professional contractual setting, a fixed regular payment due by an employer to an employee."@en .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasGuarantor>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#businessRelation> ;
+      owl:inverseOf <http://vocab.dhlab.epfl.ch/garzoni#isGuarantorOf> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#details>
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf owl:topDataProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#apprenticeship>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#EventType> ;
+      rdfs:comment "An event which corresponds to the execution of an apprenticeship."@en ;
+      rdfs:label "Apprentissage"@fr , "Apprenticeship"@en .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasMaster>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#businessRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasResidence>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/vtm/core#PersonMention> , <http://vocab.dhlab.epfl.ch/vtm/core#Person> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#PlaceMention> ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#role>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/vtm/core#PersonMention> , <http://vocab.dhlab.epfl.ch/vtm/core#Person> ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#name>
+      a       owl:ObjectProperty ;
+      rdfs:comment "This property is used to attribute a PersonAppellation to a PersonMention or a PersonEntity."^^xsd:anyURI ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/vtm/core#PersonMention> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#PersonAppellation> ;
+      rdfs:seeAlso "http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#P1"^^xsd:anyURI .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Type>
+      a       owl:Class ;
+      rdfs:isDefinedBy <http://semanticweb.cs.vu.nl/2009/11/sem/Type> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Charge>
+      a       owl:Class ;
+      rdfs:label """Charge
+"""^^xsd:string ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/vtm/core#Entity> .
+
+<http://vocab.dhlab.epfl.ch/vtm/core#hasComponent>
+      a       owl:ObjectProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#denunciationDate>
+      a       owl:DatatypeProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#enrolment>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#EventType> ;
+      rdfs:comment "An event which corresponds to the enrolment of an apprenticship. In the Garzoni project, it corresponds to the registration of the contract at the institution of the Giustizia Vecchia."@en ;
+      rdfs:label "Enrolment"@en , "Inscription"@fr .
+
+<http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties>
+      a       owl:DatatypeProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isApprenticeOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#businessRelation> .
+
+<http://vocab.dhlab.epfl.ch/vtm/core#Person>
+      a       owl:Class .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Parish>
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#Place> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#professionCategory>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#ProfessionMention> ;
+      rdfs:range xsd:string .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isStepmotherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#moneyInformation>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition> ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Workshop>
+      a       owl:Class ;
+      rdfs:comment "The place where objects are crafted or manufactured."@en ;
+      rdfs:label """Workshop
+"""^^xsd:string , "Atelier"@fr ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/vtm/core#Entity> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#HostingCondition>
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#Condition> ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:allValuesFrom <http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType> ;
+                owl:onProperty <http://vocab.dhlab.epfl.ch/garzoni#conditionType>
+              ] .
+
+<http://vocab.dhlab.epfl.ch/garzoni#PlaceMention>
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/vtm/core#EntityMention> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isHeirOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#clothing>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isFatherInLawOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#worksFor>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/vtm/core#PersonMention> ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#personDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#guarantor>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#RoleType> ;
+      rdfs:comment "A role or function that a person has while being a guarantor in the context of an apprenticeship."@en .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandsonOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Firstname>
+      a       owl:Class ;
+      rdfs:comment "The firstname of a person."@en ;
+      rdfs:label "Prénom"@fr , "Firstname"@en ;
+      rdfs:seeAlso "http://xmlns.com/foaf/0.1/givenName"^^xsd:anyURI ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#quondam2>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#PersonAppellation> ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#personDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#paidBy>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#HostingCondition> , <http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition> ;
+      rdfs:range
+              [ a       rdfs:Datatype ;
+                owl:oneOf
+                        [ a       rdf:List ;
+                          rdf:first "apprentice" ;
+                          rdf:rest
+                                  [ a       rdf:List ;
+                                    rdf:first "master" ;
+                                    rdf:rest
+                                            [ a       rdf:List ;
+                                              rdf:first "nobody" ;
+                                              rdf:rest
+                                                      [ a       rdf:List ;
+                                                        rdf:first "other" ;
+                                                        rdf:rest ()
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/vtm/core#PersonMention>
+      a       owl:Class .
+
+<http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition>
+      a       owl:Class ;
+      rdfs:comment "This class gathers contract conditions of financial nature." ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#Condition> ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:allValuesFrom <http://vocab.dhlab.epfl.ch/garzoni#FinancialConditionType> ;
+                owl:onProperty <http://vocab.dhlab.epfl.ch/garzoni#conditionType>
+              ] .
+
+<http://vocab.dhlab.epfl.ch/garzoni#other>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#RoleType> ;
+      rdfs:comment "An undetermined role or function taht a person has."@en .
+
+<http://vocab.dhlab.epfl.ch/garzoni#businessRelation>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#relationProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#onMultiplePages>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#Contract> ;
+      rdfs:range xsd:boolean .
+
+<http://vocab.dhlab.epfl.ch/garzoni#originalFilename>
+      a       owl:DatatypeProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#apprentice>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#RoleType> ;
+      rdfs:comment "A role or function which a person has when being enrolled as apprentice during an apprenticeship."@en .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGodfatherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#pledge>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#FinancialConditionType> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isSonInLawOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGodmotherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandfatherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isFamilyOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGreatGranddaughterOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isBrotherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasLocation>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention> ;
+      rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/place.owl> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#PlaceMention> ;
+      rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandchildOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#partialAmount>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#FinancialCondition> ;
+      rdfs:range xsd:integer ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#quondam1>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#PersonAppellation> ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#personDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isWidowOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#relationProperties>
+      a       owl:ObjectProperty .
+
+<http://vocab.dhlab.epfl.ch/garzoni#FinancialConditionType>
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#ConditionType> ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (<http://vocab.dhlab.epfl.ch/garzoni#pledge> <http://vocab.dhlab.epfl.ch/garzoni#salary>)
+              ] .
+
+<http://vocab.dhlab.epfl.ch/garzoni#RoleType>
+      a       owl:Class ;
+      rdfs:isDefinedBy <http://semanticweb.cs.vu.nl/2009/11/sem/RoleType> ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#Type> ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (<http://vocab.dhlab.epfl.ch/garzoni#apprentice> <http://vocab.dhlab.epfl.ch/garzoni#guarantor> <http://vocab.dhlab.epfl.ch/garzoni#master> <http://vocab.dhlab.epfl.ch/garzoni#other>)
+              ] .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Surname>
+      a       owl:Class ;
+      rdfs:comment "The surname or family name of a person entity."@en ;
+      rdfs:label "Surname"@en , "Nom de famille"@fr ;
+      rdfs:seeAlso "http://xmlns.com/foaf/0.1/familyName"^^xsd:anyURI ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isStepsonOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#genericReference>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#relationProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isFatherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isPartnerOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isWifeOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#conditionType>
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#Condition> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#ConditionType> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isMotherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isAdopterOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#applicationRule>
+      a       owl:DatatypeProperty ;
+      rdfs:comment "This property allows to state how the condition a condition applied."@en ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#HostingCondition> ;
+      rdfs:range
+              [ a       rdfs:Datatype ;
+                owl:oneOf
+                        [ a       rdf:List ;
+                          rdf:first "none" ;
+                          rdf:rest
+                                  [ a       rdf:List ;
+                                    rdf:first "sano" ;
+                                    rdf:rest
+                                            [ a       rdf:List ;
+                                              rdf:first "sano et infermo" ;
+                                              rdf:rest ()
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#oid>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#Contract> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isWorkshopOf>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasCharge>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/vtm/core#PersonMention> , <http://vocab.dhlab.epfl.ch/vtm/core#Person> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#ChargeMention> ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#parish_literal>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#PlaceMention> ;
+      rdfs:range xsd:string .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGuarantorOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#businessRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isHusbandOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isSisterOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGrandmotherOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#familyRelation>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#relationProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#genericExpenses>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#documentRelation>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#relationProperties> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#insigna>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention> ;
+      rdfs:range xsd:string .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isGrandsonOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasApprentice>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#businessRelation> ;
+      owl:inverseOf <http://vocab.dhlab.epfl.ch/garzoni#isApprenticeOf> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#id>
+      a       owl:DatatypeProperty .
+
+<http://vocab.dhlab.epfl.ch/vtm/core#EntityMention>
+      a       owl:Class .
+
+<http://vocab.dhlab.epfl.ch/garzoni#breachOfContract>
+      a       owl:NamedIndividual , <http://vocab.dhlab.epfl.ch/garzoni#EventType> ;
+      rdfs:comment "An event which corresponds to the breaking of a contract."@en ;
+      rdfs:label "Rupture de contrat"@fr , "Breach of a contract"@en .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Sestiere>
+      a       owl:Class ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#Place> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#Profession>
+      a       owl:Class ;
+      rdfs:comment "Activity in which someone is skilled and which is carries out in order to make a living. Occupation."@en ;
+      rdfs:label "Profession"@en , "Profession"@fr ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/vtm/core#Entity> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isCousinOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#hasCondition>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vocab.dhlab.epfl.ch/garzoni#Contract> ;
+      rdfs:range <http://vocab.dhlab.epfl.ch/garzoni#Condition> ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#contractProperties> ;
+      owl:inverseOf <http://vocab.dhlab.epfl.ch/garzoni#isConditionOf> .
+
+<http://vocab.dhlab.epfl.ch/garzoni#EventType>
+      a       owl:Class ;
+      rdfs:isDefinedBy <http://semanticweb.cs.vu.nl/2009/11/sem/EventType> ;
+      rdfs:subClassOf <http://vocab.dhlab.epfl.ch/garzoni#Type> ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (<http://vocab.dhlab.epfl.ch/garzoni#apprenticeship> <http://vocab.dhlab.epfl.ch/garzoni#breachOfContract> <http://vocab.dhlab.epfl.ch/garzoni#enrolment> <http://vocab.dhlab.epfl.ch/garzoni#flee>)
+              ] .
+
+<http://vocab.dhlab.epfl.ch/garzoni>
+      a       owl:Ontology ;
+      rdfs:comment "An ontology which models the information contained in the archival series \"Accordi dei Garzoni\" of the Venetian State Archives, relative to early modern venetian apprenticeship domain."@en ;
+      rdfs:label "Garzoni Ontology"@en , "Ontologie Garzoni."@fr ;
+      owl:versionInfo "1.0"^^xsd:float .
+
+<http://vocab.dhlab.epfl.ch/garzoni#isBrotherInLawOf>
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://vocab.dhlab.epfl.ch/garzoni#familyRelation> .
