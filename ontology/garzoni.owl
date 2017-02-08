@@ -8,7 +8,6 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:grz="http://localhost:8080/garzoni/ontology#">
     <owl:Ontology rdf:about="http://vocab.dhlab.epfl.ch/garzoni">
-        <owl:imports rdf:resource="http://vocab.dhlab.epfl.ch/vtm/core/2017-01"/>
         <rdfs:comment xml:lang="en">An ontology which models the information contained in the archival series &quot;Accordi dei Garzoni&quot; of the Venetian State Archives, relative to early modern venetian apprenticeship domain.</rdfs:comment>
         <rdfs:label xml:lang="fr">Ontologie Garzoni.</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</owl:versionInfo>
@@ -616,6 +615,12 @@
     
 
 
+    <!-- http://vocab.dhlab.epfl.ch/vtm/core#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.dhlab.epfl.ch/vtm/core#hasComponent"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -665,6 +670,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment xml:lang="en">This property allows to state how the condition a condition applied.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1335,6 +1341,30 @@
     <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention">
         <rdfs:subClassOf rdf:resource="http://vocab.dhlab.epfl.ch/vtm/core#EntityMention"/>
     </owl:Class>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/vtm/core#Entity -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/vtm/core#Entity"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/vtm/core#EntityMention -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/vtm/core#EntityMention"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/vtm/core#Person -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/vtm/core#Person"/>
+    
+
+
+    <!-- http://vocab.dhlab.epfl.ch/vtm/core#PersonMention -->
+
+    <owl:Class rdf:about="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention"/>
     
 
 
