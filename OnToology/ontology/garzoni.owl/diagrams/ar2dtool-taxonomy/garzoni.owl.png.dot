@@ -1,29 +1,31 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; ":ChargeMention" ":Charge" ":RoleType" ":Profession" "http://vocab.dhlab.epfl.ch/vtm/core#EntityMention" ":Patronymic1" ":FinancialConditionType" ":ProfessionMention" ":ConditionType" ":Workshop" ":Type" ":Nickname" ":WorkshopMention" ":Surname" ":AppellationComponent" ":PlaceMention" ":Collectivename" "http://vocab.dhlab.epfl.ch/vtm/core#Entity" ":EventType" ":HostingCondition" ":Condition" ":FinancialCondition" ":Parish" ":Place" ":HostingConditionType" ":Firstname" ":Sestiere" ":Patronymic2" ; /*classes style*/
-	":FinancialConditionType" -> ":ConditionType" [ label = "rdfs:subClassOf" ];
-	":Nickname" -> ":AppellationComponent" [ label = "rdfs:subClassOf" ];
-	":Profession" -> "http://vocab.dhlab.epfl.ch/vtm/core#Entity" [ label = "rdfs:subClassOf" ];
-	":Collectivename" -> ":AppellationComponent" [ label = "rdfs:subClassOf" ];
-	":WorkshopMention" -> "http://vocab.dhlab.epfl.ch/vtm/core#EntityMention" [ label = "rdfs:subClassOf" ];
-	":HostingConditionType" -> ":ConditionType" [ label = "rdfs:subClassOf" ];
-	":FinancialCondition" -> ":Condition" [ label = "rdfs:subClassOf" ];
-	":Firstname" -> ":AppellationComponent" [ label = "rdfs:subClassOf" ];
-	":EventType" -> ":Type" [ label = "rdfs:subClassOf" ];
-	":RoleType" -> ":Type" [ label = "rdfs:subClassOf" ];
-	":Surname" -> ":AppellationComponent" [ label = "rdfs:subClassOf" ];
-	":Sestiere" -> ":Place" [ label = "rdfs:subClassOf" ];
-	":Charge" -> "http://vocab.dhlab.epfl.ch/vtm/core#Entity" [ label = "rdfs:subClassOf" ];
-	":Parish" -> ":Place" [ label = "rdfs:subClassOf" ];
-	":PlaceMention" -> "http://vocab.dhlab.epfl.ch/vtm/core#EntityMention" [ label = "rdfs:subClassOf" ];
-	":Patronymic2" -> ":AppellationComponent" [ label = "rdfs:subClassOf" ];
-	":ConditionType" -> ":Type" [ label = "rdfs:subClassOf" ];
-	":ChargeMention" -> "http://vocab.dhlab.epfl.ch/vtm/core#EntityMention" [ label = "rdfs:subClassOf" ];
-	":Place" -> "http://vocab.dhlab.epfl.ch/vtm/core#Entity" [ label = "rdfs:subClassOf" ];
-	":Patronymic1" -> ":AppellationComponent" [ label = "rdfs:subClassOf" ];
-	":HostingCondition" -> ":Condition" [ label = "rdfs:subClassOf" ];
-	":ProfessionMention" -> "http://vocab.dhlab.epfl.ch/vtm/core#EntityMention" [ label = "rdfs:subClassOf" ];
-	":Workshop" -> "http://vocab.dhlab.epfl.ch/vtm/core#Entity" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "grz:ChargeMention" "grz:Charge" "grz:RoleType" "grz:Profession" "grz:Patronymic1" "grz:FinancialConditionType" "grz:ProfessionMention" "grz:ConditionType" "grz:Workshop" "grz:Type" "grz:Nickname" "http://vocab.dhlab.epfl.ch/vtm/core#Mention" "grz:WorkshopMention" "grz:Surname" "grz:AppellationComponent" "grz:PlaceMention" "grz:Collectivename" "http://vocab.dhlab.epfl.ch/vtm/core#Entity" "grz:EventType" "grz:HostingCondition" "grz:PersonMention" "grz:Condition" "grz:FinancialCondition" "grz:Parish" "grz:Place" "grz:HostingConditionType" "grz:Firstname" "grz:Person" "grz:Sestiere" "grz:Patronymic2" ; /*classes style*/
+	"grz:FinancialConditionType" -> "grz:ConditionType" [ label = "rdfs:subClassOf" ];
+	"grz:Nickname" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:Person" -> "http://vocab.dhlab.epfl.ch/vtm/core#Entity" [ label = "rdfs:subClassOf" ];
+	"grz:Profession" -> "http://vocab.dhlab.epfl.ch/vtm/core#Entity" [ label = "rdfs:subClassOf" ];
+	"grz:Collectivename" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:WorkshopMention" -> "http://vocab.dhlab.epfl.ch/vtm/core#Mention" [ label = "rdfs:subClassOf" ];
+	"grz:FinancialCondition" -> "grz:Condition" [ label = "rdfs:subClassOf" ];
+	"grz:HostingConditionType" -> "grz:ConditionType" [ label = "rdfs:subClassOf" ];
+	"grz:Firstname" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:EventType" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:RoleType" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:Surname" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:Sestiere" -> "grz:Place" [ label = "rdfs:subClassOf" ];
+	"grz:Charge" -> "http://vocab.dhlab.epfl.ch/vtm/core#Entity" [ label = "rdfs:subClassOf" ];
+	"grz:Parish" -> "grz:Place" [ label = "rdfs:subClassOf" ];
+	"grz:PlaceMention" -> "http://vocab.dhlab.epfl.ch/vtm/core#Mention" [ label = "rdfs:subClassOf" ];
+	"grz:PersonMention" -> "http://vocab.dhlab.epfl.ch/vtm/core#Mention" [ label = "rdfs:subClassOf" ];
+	"grz:Patronymic2" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:ConditionType" -> "grz:Type" [ label = "rdfs:subClassOf" ];
+	"grz:ChargeMention" -> "http://vocab.dhlab.epfl.ch/vtm/core#Mention" [ label = "rdfs:subClassOf" ];
+	"grz:Place" -> "http://vocab.dhlab.epfl.ch/vtm/core#Entity" [ label = "rdfs:subClassOf" ];
+	"grz:Patronymic1" -> "grz:AppellationComponent" [ label = "rdfs:subClassOf" ];
+	"grz:HostingCondition" -> "grz:Condition" [ label = "rdfs:subClassOf" ];
+	"grz:ProfessionMention" -> "http://vocab.dhlab.epfl.ch/vtm/core#Mention" [ label = "rdfs:subClassOf" ];
+	"grz:Workshop" -> "http://vocab.dhlab.epfl.ch/vtm/core#Entity" [ label = "rdfs:subClassOf" ];
 
 }
