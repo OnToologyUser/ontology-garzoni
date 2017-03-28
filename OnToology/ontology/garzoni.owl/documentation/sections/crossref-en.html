@@ -12,8 +12,7 @@ This section provides details for each class and property defined by Ontologie G
 </a>
       </li>
       <li>
-         <a href="#ChargeMention"
-            title="http://vocab.dhlab.epfl.ch/garzoni#ChargeMention">
+         <a href="#ChargeMention" title="http://vocab.dhlab.epfl.ch/garzoni#ChargeMention">
             <span>charge mention</span>
          </a>
       </li>
@@ -25,13 +24,17 @@ This section provides details for each class and property defined by Ontologie G
          <a href="#Condition" title="http://vocab.dhlab.epfl.ch/garzoni#Condition">Condition</a>
       </li>
       <li>
-         <a href="#ConditionType"
-            title="http://vocab.dhlab.epfl.ch/garzoni#ConditionType">
+         <a href="#ConditionType" title="http://vocab.dhlab.epfl.ch/garzoni#ConditionType">
             <span>condition type</span>
          </a>
       </li>
       <li>
          <a href="#Contract" title="http://vocab.dhlab.epfl.ch/garzoni#Contract">Contract</a>
+      </li>
+      <li>
+         <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Entity" title="http://vocab.dhlab.epfl.ch/vtm/core#Entity">
+            <span>entity</span>
+         </a>
       </li>
       <li>
          <a href="#EventType" title="http://vocab.dhlab.epfl.ch/garzoni#EventType">
@@ -66,6 +69,11 @@ This section provides details for each class and property defined by Ontologie G
          </a>
       </li>
       <li>
+         <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Mention" title="http://vocab.dhlab.epfl.ch/vtm/core#Mention">
+            <span>mention</span>
+         </a>
+      </li>
+      <li>
          <a href="#Nickname" title="http://vocab.dhlab.epfl.ch/garzoni#Nickname">Nickname</a>
       </li>
       <li>
@@ -80,9 +88,19 @@ This section provides details for each class and property defined by Ontologie G
          <a href="#Patronymic2" title="http://vocab.dhlab.epfl.ch/garzoni#Patronymic2">Patronyme 2</a>
       </li>
       <li>
+         <a href="#Person" title="http://vocab.dhlab.epfl.ch/garzoni#Person">
+            <span>person</span>
+         </a>
+      </li>
+      <li>
          <a href="#PersonAppellation"
             title="http://vocab.dhlab.epfl.ch/garzoni#PersonAppellation">
             <span>person appellation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PersonMention" title="http://vocab.dhlab.epfl.ch/garzoni#PersonMention">
+            <span>person mention</span>
          </a>
       </li>
       <li>
@@ -175,7 +193,7 @@ This section provides details for each class and property defined by Ontologie G
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#Entity">entity</span>
+            <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Entity" title="http://vocab.dhlab.epfl.ch/vtm/core#Entity">entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -190,8 +208,7 @@ This section provides details for each class and property defined by Ontologie G
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://vocab.dhlab.epfl.ch/vtm/core#EntityMention">entity mention</span>
+            <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Mention" title="http://vocab.dhlab.epfl.ch/vtm/core#Mention">mention</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -293,8 +310,7 @@ This section provides details for each class and property defined by Ontologie G
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#cites" title="http://vocab.dhlab.epfl.ch/garzoni#cites">cites</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasCondition" title="http://vocab.dhlab.epfl.ch/garzoni#hasCondition">has condition</a>
+            <a href="#hasCondition" title="http://vocab.dhlab.epfl.ch/garzoni#hasCondition">has condition</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasMargin" title="http://vocab.dhlab.epfl.ch/garzoni#hasMargin">has margin</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#oid" title="http://vocab.dhlab.epfl.ch/garzoni#oid">oid</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#onMultiplePages"
@@ -303,9 +319,34 @@ This section provides details for each class and property defined by Ontologie G
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#cites" title="http://vocab.dhlab.epfl.ch/garzoni#cites">cites</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isConditionOf" title="http://vocab.dhlab.epfl.ch/garzoni#isConditionOf">is condition of</a>
+            <a href="#isConditionOf" title="http://vocab.dhlab.epfl.ch/garzoni#isConditionOf">is condition of</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.dhlab.epfl.ch/vtm/core#Entity">
+      <h3>entity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/vtm/core#Entity</p>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>http://vocab.dhlab.epfl.ch/garzoni</dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Charge" title="http://vocab.dhlab.epfl.ch/garzoni#Charge">Charge
+</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Place" title="http://vocab.dhlab.epfl.ch/garzoni#Place">Place
+</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Profession" title="http://vocab.dhlab.epfl.ch/garzoni#Profession">Profession</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Workshop" title="http://vocab.dhlab.epfl.ch/garzoni#Workshop">Workshop
+</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Person" title="http://vocab.dhlab.epfl.ch/garzoni#Person">person</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -395,8 +436,7 @@ This section provides details for each class and property defined by Ontologie G
          <dd>{ <a href="#salary" title="http://vocab.dhlab.epfl.ch/garzoni#salary">salary</a> , <a href="#pledge" title="http://vocab.dhlab.epfl.ch/garzoni#pledge">pledge</a> }</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="#ConditionType"
-               title="http://vocab.dhlab.epfl.ch/garzoni#ConditionType">condition type</a>
+            <a href="#ConditionType" title="http://vocab.dhlab.epfl.ch/garzoni#ConditionType">condition type</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
@@ -474,8 +514,7 @@ This section provides details for each class and property defined by Ontologie G
                title="http://vocab.dhlab.epfl.ch/garzoni#genericExpenses">generic expenses</a> , <a href="#personalCare" title="http://vocab.dhlab.epfl.ch/garzoni#personalCare">personal care</a> , <a href="#accomodation" title="http://vocab.dhlab.epfl.ch/garzoni#accomodation">accomodation</a> }</dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="#ConditionType"
-               title="http://vocab.dhlab.epfl.ch/garzoni#ConditionType">condition type</a>
+            <a href="#ConditionType" title="http://vocab.dhlab.epfl.ch/garzoni#ConditionType">condition type</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
@@ -486,6 +525,31 @@ This section provides details for each class and property defined by Ontologie G
                title="http://vocab.dhlab.epfl.ch/garzoni#genericExpenses">generic expenses</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#personalCare" title="http://vocab.dhlab.epfl.ch/garzoni#personalCare">personal care</a>
             <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://vocab.dhlab.epfl.ch/vtm/core#Mention">
+      <h3>mention<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/vtm/core#Mention</p>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>http://vocab.dhlab.epfl.ch/garzoni</dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ChargeMention" title="http://vocab.dhlab.epfl.ch/garzoni#ChargeMention">charge mention</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PersonMention" title="http://vocab.dhlab.epfl.ch/garzoni#PersonMention">person mention</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PlaceMention" title="http://vocab.dhlab.epfl.ch/garzoni#PlaceMention">place mention</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ProfessionMention"
+               title="http://vocab.dhlab.epfl.ch/garzoni#ProfessionMention">profession mention</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#WorkshopMention"
+               title="http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention">workshop mention</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -512,17 +576,16 @@ This section provides details for each class and property defined by Ontologie G
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#Parish</p>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>http://vocab.dhlab.epfl.ch/garzoni</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#Place" title="http://vocab.dhlab.epfl.ch/garzoni#Place">Place
 </a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#inParish" title="http://vocab.dhlab.epfl.ch/garzoni#inParish">in parish</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -565,6 +628,25 @@ This section provides details for each class and property defined by Ontologie G
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Person">
+      <h3>person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#Person</p>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>http://vocab.dhlab.epfl.ch/garzoni</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Entity" title="http://vocab.dhlab.epfl.ch/vtm/core#Entity">entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="PersonAppellation">
       <h3>person appellation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -576,15 +658,6 @@ This section provides details for each class and property defined by Ontologie G
          <span class="markdown">The name of a person entity.</span>
       </div>
       <dl class="description">
-         <dt>is equivalent to</dt>
-         <dd>
-            <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#hasComponent">has component</span>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">some</span> 
-            <a href="#AppellationComponent"
-               title="http://vocab.dhlab.epfl.ch/garzoni#AppellationComponent">Appellation Component</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#quondam1" title="http://vocab.dhlab.epfl.ch/garzoni#quondam1">quondam1</a>
@@ -598,6 +671,25 @@ This section provides details for each class and property defined by Ontologie G
          </dd>
       </dl>
    </div>
+   <div class="entity" id="PersonMention">
+      <h3>person mention<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#PersonMention</p>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>http://vocab.dhlab.epfl.ch/garzoni</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Mention" title="http://vocab.dhlab.epfl.ch/vtm/core#Mention">mention</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Place">
       <h3>Place
 <sup class="type-c" title="class">c</sup>
@@ -606,10 +698,14 @@ This section provides details for each class and property defined by Ontologie G
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#Place</p>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>http://vocab.dhlab.epfl.ch/garzoni</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#Entity">entity</span>
+            <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Entity" title="http://vocab.dhlab.epfl.ch/vtm/core#Entity">entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -627,18 +723,19 @@ This section provides details for each class and property defined by Ontologie G
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#PlaceMention</p>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>http://vocab.dhlab.epfl.ch/garzoni</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://vocab.dhlab.epfl.ch/vtm/core#EntityMention">entity mention</span>
+            <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Mention" title="http://vocab.dhlab.epfl.ch/vtm/core#Mention">mention</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#inParish" title="http://vocab.dhlab.epfl.ch/garzoni#inParish">in parish</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#inSestiere" title="http://vocab.dhlab.epfl.ch/garzoni#inSestiere">in sestiere</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#parish_literal"
+            <a href="#parish_literal"
                title="http://vocab.dhlab.epfl.ch/garzoni#parish_literal">parish literal</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#sestiere_literal"
                title="http://vocab.dhlab.epfl.ch/garzoni#sestiere_literal">sestiere literal</a>
@@ -649,7 +746,6 @@ This section provides details for each class and property defined by Ontologie G
             <a href="#hasGeographicalOrigin"
                title="http://vocab.dhlab.epfl.ch/garzoni#hasGeographicalOrigin">has geographical origin</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="http://vocab.dhlab.epfl.ch/garzoni#hasLocation">has location</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasResidence" title="http://vocab.dhlab.epfl.ch/garzoni#hasResidence">has residence</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -667,7 +763,7 @@ This section provides details for each class and property defined by Ontologie G
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#Entity">entity</span>
+            <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Entity" title="http://vocab.dhlab.epfl.ch/vtm/core#Entity">entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -682,8 +778,7 @@ This section provides details for each class and property defined by Ontologie G
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://vocab.dhlab.epfl.ch/vtm/core#EntityMention">entity mention</span>
+            <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Mention" title="http://vocab.dhlab.epfl.ch/vtm/core#Mention">mention</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -691,11 +786,6 @@ This section provides details for each class and property defined by Ontologie G
             <a href="#professionCategory"
                title="http://vocab.dhlab.epfl.ch/garzoni#professionCategory">profession category</a>
             <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasProfession" title="http://vocab.dhlab.epfl.ch/garzoni#hasProfession">has profession</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -719,11 +809,6 @@ This section provides details for each class and property defined by Ontologie G
          <dd>
             <a href="#Type" title="http://vocab.dhlab.epfl.ch/garzoni#Type">type</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasFunction" title="http://vocab.dhlab.epfl.ch/garzoni#hasFunction">has function</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>has members</dt>
          <dd>
@@ -757,15 +842,6 @@ This section provides details for each class and property defined by Ontologie G
          <span class="markdown">A complex salary object composed of several salary components representing different stages of a salary.</span>
       </div>
       <dl class="description">
-         <dt>is equivalent to</dt>
-         <dd>
-            <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#hasComponent">has component</span>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">some</span> 
-            <a href="#SalaryComponent"
-               title="http://vocab.dhlab.epfl.ch/garzoni#SalaryComponent">Salary component</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasSalaryProgression"
@@ -781,17 +857,16 @@ This section provides details for each class and property defined by Ontologie G
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#Sestiere</p>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>http://vocab.dhlab.epfl.ch/garzoni</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#Place" title="http://vocab.dhlab.epfl.ch/garzoni#Place">Place
 </a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#inSestiere" title="http://vocab.dhlab.epfl.ch/garzoni#inSestiere">in sestiere</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -830,8 +905,7 @@ This section provides details for each class and property defined by Ontologie G
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#ConditionType"
-               title="http://vocab.dhlab.epfl.ch/garzoni#ConditionType">condition type</a>
+            <a href="#ConditionType" title="http://vocab.dhlab.epfl.ch/garzoni#ConditionType">condition type</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EventType" title="http://vocab.dhlab.epfl.ch/garzoni#EventType">event type</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RoleType" title="http://vocab.dhlab.epfl.ch/garzoni#RoleType">role type</a>
             <sup class="type-c" title="class">c</sup>
@@ -852,7 +926,7 @@ This section provides details for each class and property defined by Ontologie G
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#Entity">entity</span>
+            <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Entity" title="http://vocab.dhlab.epfl.ch/vtm/core#Entity">entity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -867,8 +941,7 @@ This section provides details for each class and property defined by Ontologie G
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://vocab.dhlab.epfl.ch/vtm/core#EntityMention">entity mention</span>
+            <a href="#http://vocab.dhlab.epfl.ch/vtm/core#Mention" title="http://vocab.dhlab.epfl.ch/vtm/core#Mention">mention</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -889,12 +962,6 @@ This section provides details for each class and property defined by Ontologie G
    <h2>Object Properties</h2>
    <ul class="hlist">
       <li>
-         <a href="#businessRelation"
-            title="http://vocab.dhlab.epfl.ch/garzoni#businessRelation">
-            <span>business relation</span>
-         </a>
-      </li>
-      <li>
          <a href="#cites" title="http://vocab.dhlab.epfl.ch/garzoni#cites">
             <span>cites</span>
          </a>
@@ -902,34 +969,6 @@ This section provides details for each class and property defined by Ontologie G
       <li>
          <a href="#conditionType" title="http://vocab.dhlab.epfl.ch/garzoni#conditionType">
             <span>condition type</span>
-         </a>
-      </li>
-      <li>
-         <a href="#documentRelation"
-            title="http://vocab.dhlab.epfl.ch/garzoni#documentRelation">
-            <span>document relation</span>
-         </a>
-      </li>
-      <li>
-         <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">
-            <span>family relation</span>
-         </a>
-      </li>
-      <li>
-         <a href="#genericReference"
-            title="http://vocab.dhlab.epfl.ch/garzoni#genericReference">
-            <span>generic reference</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasApprentice" title="http://vocab.dhlab.epfl.ch/garzoni#hasApprentice">
-            <span>has apprentice</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasBusinessWith"
-            title="http://vocab.dhlab.epfl.ch/garzoni#hasBusinessWith">
-            <span>has business with</span>
          </a>
       </li>
       <li>
@@ -943,29 +982,14 @@ This section provides details for each class and property defined by Ontologie G
          </a>
       </li>
       <li>
-         <a href="#hasFunction" title="http://vocab.dhlab.epfl.ch/garzoni#hasFunction">
-            <span>has function</span>
-         </a>
-      </li>
-      <li>
          <a href="#hasGeographicalOrigin"
             title="http://vocab.dhlab.epfl.ch/garzoni#hasGeographicalOrigin">
             <span>has geographical origin</span>
          </a>
       </li>
       <li>
-         <a href="#hasGuarantor" title="http://vocab.dhlab.epfl.ch/garzoni#hasGuarantor">
-            <span>has guarantor</span>
-         </a>
-      </li>
-      <li>
          <a href="#hasLocation" title="http://vocab.dhlab.epfl.ch/garzoni#hasLocation">
             <span>has location</span>
-         </a>
-      </li>
-      <li>
-         <a href="#hasMaster" title="http://vocab.dhlab.epfl.ch/garzoni#hasMaster">
-            <span>has master</span>
          </a>
       </li>
       <li>
@@ -976,6 +1000,11 @@ This section provides details for each class and property defined by Ontologie G
       <li>
          <a href="#hasResidence" title="http://vocab.dhlab.epfl.ch/garzoni#hasResidence">
             <span>has residence</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasRole" title="http://vocab.dhlab.epfl.ch/garzoni#hasRole">
+            <span>has role</span>
          </a>
       </li>
       <li>
@@ -990,233 +1019,8 @@ This section provides details for each class and property defined by Ontologie G
          </a>
       </li>
       <li>
-         <a href="#inParish" title="http://vocab.dhlab.epfl.ch/garzoni#inParish">
-            <span>in parish</span>
-         </a>
-      </li>
-      <li>
-         <a href="#inSestiere" title="http://vocab.dhlab.epfl.ch/garzoni#inSestiere">
-            <span>in sestiere</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isAdoptedBy" title="http://vocab.dhlab.epfl.ch/garzoni#isAdoptedBy">
-            <span>is adopted by</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isAdopterOf" title="http://vocab.dhlab.epfl.ch/garzoni#isAdopterOf">
-            <span>is adopter of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isApprenticeOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isApprenticeOf">
-            <span>is apprentice of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isAuntOf" title="http://vocab.dhlab.epfl.ch/garzoni#isAuntOf">
-            <span>is aunt of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isBrotherInLawOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isBrotherInLawOf">
-            <span>is brother in law of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isBrotherOf" title="http://vocab.dhlab.epfl.ch/garzoni#isBrotherOf">
-            <span>is brother of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isColleagueOf" title="http://vocab.dhlab.epfl.ch/garzoni#isColleagueOf">
-            <span>is colleague of</span>
-         </a>
-      </li>
-      <li>
          <a href="#isConditionOf" title="http://vocab.dhlab.epfl.ch/garzoni#isConditionOf">
             <span>is condition of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isCousinOf" title="http://vocab.dhlab.epfl.ch/garzoni#isCousinOf">
-            <span>is cousin of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isDaughterOf" title="http://vocab.dhlab.epfl.ch/garzoni#isDaughterOf">
-            <span>is daughter of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isFamilyOf" title="http://vocab.dhlab.epfl.ch/garzoni#isFamilyOf">
-            <span>is family of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isFatherInLawOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isFatherInLawOf">
-            <span>is father in law of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isFatherOf" title="http://vocab.dhlab.epfl.ch/garzoni#isFatherOf">
-            <span>is father of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGodfatherOf" title="http://vocab.dhlab.epfl.ch/garzoni#isGodfatherOf">
-            <span>is godfather of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGodmotherOf" title="http://vocab.dhlab.epfl.ch/garzoni#isGodmotherOf">
-            <span>is godmother of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGranddaughterOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isGranddaughterOf">
-            <span>is granddaughter of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGrandfatherOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isGrandfatherOf">
-            <span>is grandfather of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGrandmotherOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isGrandmotherOf">
-            <span>is grandmother of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGrandsonOf" title="http://vocab.dhlab.epfl.ch/garzoni#isGrandsonOf">
-            <span>is grandson of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGreatGrandchildOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandchildOf">
-            <span>is great grandchild of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGreatGranddaughterOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isGreatGranddaughterOf">
-            <span>is great granddaughter of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGreatGrandfatherOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandfatherOf">
-            <span>is great grandfather of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGreatGrandmotherOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandmotherOf">
-            <span>is great grandmother of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGreatGrandsonOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandsonOf">
-            <span>is great grandson of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isGuarantorOf" title="http://vocab.dhlab.epfl.ch/garzoni#isGuarantorOf">
-            <span>is guarantor of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isHeirOf" title="http://vocab.dhlab.epfl.ch/garzoni#isHeirOf">
-            <span>is heir of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isHusbandOf" title="http://vocab.dhlab.epfl.ch/garzoni#isHusbandOf">
-            <span>is husband of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isMotherInLawOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isMotherInLawOf">
-            <span>is mother in law of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isMotherOf" title="http://vocab.dhlab.epfl.ch/garzoni#isMotherOf">
-            <span>is mother of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isNephewOf" title="http://vocab.dhlab.epfl.ch/garzoni#isNephewOf">
-            <span>is nephew of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isPartnerOf" title="http://vocab.dhlab.epfl.ch/garzoni#isPartnerOf">
-            <span>is partner of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isSisterInLawOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isSisterInLawOf">
-            <span>is sister in law of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isSisterOf" title="http://vocab.dhlab.epfl.ch/garzoni#isSisterOf">
-            <span>is sister of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isSonInLawOf" title="http://vocab.dhlab.epfl.ch/garzoni#isSonInLawOf">
-            <span>is son in law of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isSonOf" title="http://vocab.dhlab.epfl.ch/garzoni#isSonOf">
-            <span>is son of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isStepfatherOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isStepfatherOf">
-            <span>is stepfather of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isStepmotherOf"
-            title="http://vocab.dhlab.epfl.ch/garzoni#isStepmotherOf">
-            <span>is stepmother of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isStepsonOf" title="http://vocab.dhlab.epfl.ch/garzoni#isStepsonOf">
-            <span>is stepson of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isUncleOf" title="http://vocab.dhlab.epfl.ch/garzoni#isUncleOf">
-            <span>is uncle of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isWidowOf" title="http://vocab.dhlab.epfl.ch/garzoni#isWidowOf">
-            <span>is widow of</span>
-         </a>
-      </li>
-      <li>
-         <a href="#isWifeOf" title="http://vocab.dhlab.epfl.ch/garzoni#isWifeOf">
-            <span>is wife of</span>
          </a>
       </li>
       <li>
@@ -1235,43 +1039,7 @@ This section provides details for each class and property defined by Ontologie G
             <span>related contract</span>
          </a>
       </li>
-      <li>
-         <a href="#role" title="http://vocab.dhlab.epfl.ch/garzoni#role">
-            <span>role</span>
-         </a>
-      </li>
    </ul>
-   <div class="entity" id="businessRelation">
-      <h3>business relation<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#businessRelation</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/garzoni#relationProperties">relation properties</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasApprentice" title="http://vocab.dhlab.epfl.ch/garzoni#hasApprentice">has apprentice</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasBusinessWith"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#hasBusinessWith">has business with</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasGuarantor" title="http://vocab.dhlab.epfl.ch/garzoni#hasGuarantor">has guarantor</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasMaster" title="http://vocab.dhlab.epfl.ch/garzoni#hasMaster">has master</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isApprenticeOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isApprenticeOf">is apprentice of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isColleagueOf" title="http://vocab.dhlab.epfl.ch/garzoni#isColleagueOf">is colleague of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGuarantorOf" title="http://vocab.dhlab.epfl.ch/garzoni#isGuarantorOf">is guarantor of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="cites">
       <h3>cites<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1283,19 +1051,9 @@ This section provides details for each class and property defined by Ontologie G
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#documentRelation"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#documentRelation">document relation</a>
+               <span class="dotted"
+                     title="http://vocab.dhlab.epfl.ch/garzoni#contractProperties">contract properties</span>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Contract" title="http://vocab.dhlab.epfl.ch/garzoni#Contract">Contract</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Contract" title="http://vocab.dhlab.epfl.ch/garzoni#Contract">Contract</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1318,165 +1076,8 @@ This section provides details for each class and property defined by Ontologie G
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ConditionType"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#ConditionType">condition type</a>
+               <a href="#ConditionType" title="http://vocab.dhlab.epfl.ch/garzoni#ConditionType">condition type</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="documentRelation">
-      <h3>document relation<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#documentRelation</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/garzoni#relationProperties">relation properties</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#cites" title="http://vocab.dhlab.epfl.ch/garzoni#cites">cites</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="familyRelation">
-      <h3>family relation<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#familyRelation</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/garzoni#relationProperties">relation properties</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#isAdoptedBy" title="http://vocab.dhlab.epfl.ch/garzoni#isAdoptedBy">is adopted by</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isAdopterOf" title="http://vocab.dhlab.epfl.ch/garzoni#isAdopterOf">is adopter of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isAuntOf" title="http://vocab.dhlab.epfl.ch/garzoni#isAuntOf">is aunt of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isBrotherInLawOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isBrotherInLawOf">is brother in law of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isBrotherOf" title="http://vocab.dhlab.epfl.ch/garzoni#isBrotherOf">is brother of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isCousinOf" title="http://vocab.dhlab.epfl.ch/garzoni#isCousinOf">is cousin of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isDaughterOf" title="http://vocab.dhlab.epfl.ch/garzoni#isDaughterOf">is daughter of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isFamilyOf" title="http://vocab.dhlab.epfl.ch/garzoni#isFamilyOf">is family of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isFatherInLawOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isFatherInLawOf">is father in law of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isFatherOf" title="http://vocab.dhlab.epfl.ch/garzoni#isFatherOf">is father of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGodfatherOf" title="http://vocab.dhlab.epfl.ch/garzoni#isGodfatherOf">is godfather of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGodmotherOf" title="http://vocab.dhlab.epfl.ch/garzoni#isGodmotherOf">is godmother of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGranddaughterOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isGranddaughterOf">is granddaughter of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGrandfatherOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isGrandfatherOf">is grandfather of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGrandmotherOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isGrandmotherOf">is grandmother of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGrandsonOf" title="http://vocab.dhlab.epfl.ch/garzoni#isGrandsonOf">is grandson of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGreatGrandchildOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandchildOf">is great grandchild of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGreatGranddaughterOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isGreatGranddaughterOf">is great granddaughter of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGreatGrandfatherOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandfatherOf">is great grandfather of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGreatGrandmotherOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandmotherOf">is great grandmother of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isGreatGrandsonOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandsonOf">is great grandson of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isHeirOf" title="http://vocab.dhlab.epfl.ch/garzoni#isHeirOf">is heir of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isHusbandOf" title="http://vocab.dhlab.epfl.ch/garzoni#isHusbandOf">is husband of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isMotherInLawOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isMotherInLawOf">is mother in law of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isMotherOf" title="http://vocab.dhlab.epfl.ch/garzoni#isMotherOf">is mother of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isNephewOf" title="http://vocab.dhlab.epfl.ch/garzoni#isNephewOf">is nephew of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isPartnerOf" title="http://vocab.dhlab.epfl.ch/garzoni#isPartnerOf">is partner of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isSisterInLawOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isSisterInLawOf">is sister in law of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isSisterOf" title="http://vocab.dhlab.epfl.ch/garzoni#isSisterOf">is sister of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isSonInLawOf" title="http://vocab.dhlab.epfl.ch/garzoni#isSonInLawOf">is son in law of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isSonOf" title="http://vocab.dhlab.epfl.ch/garzoni#isSonOf">is son of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isStepfatherOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isStepfatherOf">is stepfather of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isStepmotherOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isStepmotherOf">is stepmother of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isStepsonOf" title="http://vocab.dhlab.epfl.ch/garzoni#isStepsonOf">is stepson of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isUncleOf" title="http://vocab.dhlab.epfl.ch/garzoni#isUncleOf">is uncle of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isWidowOf" title="http://vocab.dhlab.epfl.ch/garzoni#isWidowOf">is widow of</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#isWifeOf" title="http://vocab.dhlab.epfl.ch/garzoni#isWifeOf">is wife of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="genericReference">
-      <h3>generic reference<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#genericReference</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/garzoni#relationProperties">relation properties</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasApprentice">
-      <h3>has apprentice<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#hasApprentice</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#businessRelation"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#businessRelation">business relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isApprenticeOf"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#isApprenticeOf">is apprentice of</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasBusinessWith">
-      <h3>has business with<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#hasBusinessWith</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#businessRelation"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#businessRelation">business relation</a>
-               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1493,23 +1094,12 @@ This section provides details for each class and property defined by Ontologie G
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties">person mention properties</span>
+                     title="http://vocab.dhlab.epfl.ch/garzoni#personProperties">person properties</span>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#Person">person</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention">person mention</span>
-               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ChargeMention"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#ChargeMention">charge mention</a>
+               <a href="#ChargeMention" title="http://vocab.dhlab.epfl.ch/garzoni#ChargeMention">charge mention</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1548,33 +1138,6 @@ This section provides details for each class and property defined by Ontologie G
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasFunction">
-      <h3>has function<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#hasFunction</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention">person mention</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#RoleType" title="http://vocab.dhlab.epfl.ch/garzoni#RoleType">role type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasGeographicalOrigin">
       <h3>has geographical origin<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1587,46 +1150,13 @@ This section provides details for each class and property defined by Ontologie G
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties">person mention properties</span>
+                     title="http://vocab.dhlab.epfl.ch/garzoni#personProperties">person properties</span>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#Person">person</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention">person mention</span>
-               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#PlaceMention" title="http://vocab.dhlab.epfl.ch/garzoni#PlaceMention">place mention</a>
                <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasGuarantor">
-      <h3>has guarantor<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#hasGuarantor</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#businessRelation"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#businessRelation">business relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#isGuarantorOf" title="http://vocab.dhlab.epfl.ch/garzoni#isGuarantorOf">is guarantor of</a>
-               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1664,24 +1194,6 @@ This section provides details for each class and property defined by Ontologie G
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasMaster">
-      <h3>has master<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#hasMaster</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#businessRelation"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#businessRelation">business relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasProfession">
       <h3>has profession<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1694,24 +1206,8 @@ This section provides details for each class and property defined by Ontologie G
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties">person mention properties</span>
+                     title="http://vocab.dhlab.epfl.ch/garzoni#personProperties">person properties</span>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#Person">person</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention">person mention</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#ProfessionMention"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#ProfessionMention">profession mention</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1728,23 +1224,26 @@ This section provides details for each class and property defined by Ontologie G
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties">person mention properties</span>
+                     title="http://vocab.dhlab.epfl.ch/garzoni#personProperties">person properties</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#Person">person</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRole">
+      <h3>has role<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#hasRole</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
             <dd>
                <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention">person mention</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#PlaceMention" title="http://vocab.dhlab.epfl.ch/garzoni#PlaceMention">place mention</a>
-               <sup class="type-c" title="class">c</sup>
+                     title="http://vocab.dhlab.epfl.ch/garzoni#personProperties">person properties</span>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1799,176 +1298,6 @@ This section provides details for each class and property defined by Ontologie G
          </dl>
       </div>
    </div>
-   <div class="entity" id="inParish">
-      <h3>in parish<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#inParish</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PlaceMention" title="http://vocab.dhlab.epfl.ch/garzoni#PlaceMention">place mention</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Parish" title="http://vocab.dhlab.epfl.ch/garzoni#Parish">parish</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="inSestiere">
-      <h3>in sestiere<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#inSestiere</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PlaceMention" title="http://vocab.dhlab.epfl.ch/garzoni#PlaceMention">place mention</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Sestiere" title="http://vocab.dhlab.epfl.ch/garzoni#Sestiere">sestiere</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isAdoptedBy">
-      <h3>is adopted by<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isAdoptedBy</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isAdopterOf">
-      <h3>is adopter of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isAdopterOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isApprenticeOf">
-      <h3>is apprentice of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isApprenticeOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#businessRelation"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#businessRelation">business relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasApprentice" title="http://vocab.dhlab.epfl.ch/garzoni#hasApprentice">has apprentice</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isAuntOf">
-      <h3>is aunt of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isAuntOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isBrotherInLawOf">
-      <h3>is brother in law of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isBrotherInLawOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isBrotherOf">
-      <h3>is brother of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isBrotherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isColleagueOf">
-      <h3>is colleague of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isColleagueOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#businessRelation"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#businessRelation">business relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="isConditionOf">
       <h3>is condition of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1997,573 +1326,6 @@ This section provides details for each class and property defined by Ontologie G
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasCondition" title="http://vocab.dhlab.epfl.ch/garzoni#hasCondition">has condition</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isCousinOf">
-      <h3>is cousin of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isCousinOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isDaughterOf">
-      <h3>is daughter of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isDaughterOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isFamilyOf">
-      <h3>is family of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isFamilyOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isFatherInLawOf">
-      <h3>is father in law of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isFatherInLawOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isFatherOf">
-      <h3>is father of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isFatherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGodfatherOf">
-      <h3>is godfather of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGodfatherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGodmotherOf">
-      <h3>is godmother of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGodmotherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGranddaughterOf">
-      <h3>is granddaughter of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGranddaughterOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGrandfatherOf">
-      <h3>is grandfather of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGrandfatherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGrandmotherOf">
-      <h3>is grandmother of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGrandmotherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGrandsonOf">
-      <h3>is grandson of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGrandsonOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGreatGrandchildOf">
-      <h3>is great grandchild of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandchildOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGreatGranddaughterOf">
-      <h3>is great granddaughter of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGreatGranddaughterOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGreatGrandfatherOf">
-      <h3>is great grandfather of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandfatherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGreatGrandmotherOf">
-      <h3>is great grandmother of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandmotherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGreatGrandsonOf">
-      <h3>is great grandson of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandsonOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isGuarantorOf">
-      <h3>is guarantor of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isGuarantorOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#businessRelation"
-                  title="http://vocab.dhlab.epfl.ch/garzoni#businessRelation">business relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#hasGuarantor" title="http://vocab.dhlab.epfl.ch/garzoni#hasGuarantor">has guarantor</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isHeirOf">
-      <h3>is heir of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isHeirOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isHusbandOf">
-      <h3>is husband of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isHusbandOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isMotherInLawOf">
-      <h3>is mother in law of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isMotherInLawOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isMotherOf">
-      <h3>is mother of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isMotherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isNephewOf">
-      <h3>is nephew of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isNephewOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isPartnerOf">
-      <h3>is partner of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isPartnerOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isSisterInLawOf">
-      <h3>is sister in law of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isSisterInLawOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isSisterOf">
-      <h3>is sister of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isSisterOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isSonInLawOf">
-      <h3>is son in law of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isSonInLawOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isSonOf">
-      <h3>is son of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isSonOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isStepfatherOf">
-      <h3>is stepfather of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isStepfatherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isStepmotherOf">
-      <h3>is stepmother of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isStepmotherOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isStepsonOf">
-      <h3>is stepson of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isStepsonOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isUncleOf">
-      <h3>is uncle of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isUncleOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isWidowOf">
-      <h3>is widow of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isWidowOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isWifeOf">
-      <h3>is wife of<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#isWifeOf</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#familyRelation" title="http://vocab.dhlab.epfl.ch/garzoni#familyRelation">family relation</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -2604,12 +1366,6 @@ This section provides details for each class and property defined by Ontologie G
       </div>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention">person mention</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#PersonAppellation"
@@ -2633,34 +1389,6 @@ This section provides details for each class and property defined by Ontologie G
                <span class="dotted"
                      title="http://vocab.dhlab.epfl.ch/garzoni#contractProperties">contract properties</span>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="role">
-      <h3>role<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.dhlab.epfl.ch/garzoni#role</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties">person mention properties</span>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted" title="http://vocab.dhlab.epfl.ch/vtm/core#Person">person</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention">person mention</span>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2806,12 +1534,6 @@ This section provides details for each class and property defined by Ontologie G
                      title="http://vocab.dhlab.epfl.ch/garzoni#personDataProperties">person data properties</span>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention">person mention</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
@@ -2931,12 +1653,6 @@ This section provides details for each class and property defined by Ontologie G
                <span class="dotted"
                      title="http://vocab.dhlab.epfl.ch/garzoni#personDataProperties">person data properties</span>
                <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention">person mention</span>
-               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -3367,12 +2083,6 @@ This section provides details for each class and property defined by Ontologie G
                <span class="dotted"
                      title="http://vocab.dhlab.epfl.ch/garzoni#personDataProperties">person data properties</span>
                <sup class="type-dp" title="data property">dp</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://vocab.dhlab.epfl.ch/vtm/core#PersonMention">person mention</span>
-               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>

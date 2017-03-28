@@ -1,20 +1,8 @@
 {
   "@context" : {
-    "familyRelation" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#familyRelation",
-      "@type" : "@id"
-    },
-    "isGuarantorOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGuarantorOf",
-      "@type" : "@id"
-    },
     "ageText" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#ageText",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "hasGuarantor" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasGuarantor",
-      "@type" : "@id"
     },
     "hasProfession" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasProfession",
@@ -23,27 +11,11 @@
     "PlaceMention" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#PlaceMention"
     },
-    "role" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#role",
-      "@type" : "@id"
-    },
     "Nickname" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Nickname"
     },
     "hasGeographicalOrigin" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasGeographicalOrigin",
-      "@type" : "@id"
-    },
-    "isDaughterOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isDaughterOf",
-      "@type" : "@id"
-    },
-    "isStepfatherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isStepfatherOf",
-      "@type" : "@id"
-    },
-    "isCousinOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isCousinOf",
       "@type" : "@id"
     },
     "versionInfo" : {
@@ -56,10 +28,6 @@
     "ChargeMention" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#ChargeMention"
     },
-    "inParish" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#inParish",
-      "@type" : "@id"
-    },
     "SalaryProgression" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#SalaryProgression"
     },
@@ -69,16 +37,8 @@
     "HostingConditionType" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#HostingConditionType"
     },
-    "isGreatGrandchildOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandchildOf",
-      "@type" : "@id"
-    },
     "Type" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Type"
-    },
-    "hasBusinessWith" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasBusinessWith",
-      "@type" : "@id"
     },
     "topDataProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
@@ -94,36 +54,23 @@
     "Patronymic2" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Patronymic2"
     },
-    "isGrandfatherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGrandfatherOf",
-      "@type" : "@id"
-    },
     "Charge" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Charge"
-    },
-    "isFamilyOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isFamilyOf",
-      "@type" : "@id"
     },
     "Workshop" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Workshop"
     },
-    "isNephewOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isNephewOf",
-      "@type" : "@id"
-    },
     "Surname" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Surname"
-    },
-    "isGreatGrandsonOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandsonOf",
-      "@type" : "@id"
     },
     "periodization" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#periodization"
     },
     "Sestiere" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Sestiere"
+    },
+    "Mention" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/vtm/core#Mention"
     },
     "personDataProperties" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#personDataProperties"
@@ -132,40 +79,24 @@
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#quondam1",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
+    "hasRole" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasRole",
+      "@type" : "@id"
+    },
     "paidBy" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#paidBy"
-    },
-    "isBrotherInLawOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isBrotherInLawOf",
-      "@type" : "@id"
     },
     "Patronymic1" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Patronymic1"
     },
-    "isWifeOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isWifeOf",
-      "@type" : "@id"
-    },
     "Parish" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Parish"
-    },
-    "personMentionProperties" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#personMentionProperties",
-      "@type" : "@id"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
-    "isStepsonOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isStepsonOf",
-      "@type" : "@id"
-    },
     "applicationRule" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#applicationRule"
-    },
-    "isAdoptedBy" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isAdoptedBy",
-      "@type" : "@id"
     },
     "relatedContract" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#relatedContract",
@@ -174,21 +105,9 @@
     "Contract" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Contract"
     },
-    "isGodfatherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGodfatherOf",
-      "@type" : "@id"
-    },
-    "isAdopterOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isAdopterOf",
-      "@type" : "@id"
-    },
     "identifiedPerson" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#identifiedPerson",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "isBrotherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isBrotherOf",
-      "@type" : "@id"
     },
     "hasMargin" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasMargin",
@@ -198,30 +117,14 @@
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#contractProperties",
       "@type" : "@id"
     },
-    "isFatherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isFatherOf",
-      "@type" : "@id"
-    },
     "id" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#id"
-    },
-    "isHeirOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isHeirOf",
-      "@type" : "@id"
-    },
-    "inSestiere" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#inSestiere",
-      "@type" : "@id"
-    },
-    "isGreatGrandfatherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandfatherOf",
-      "@type" : "@id"
     },
     "EventType" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#EventType"
     },
     "Person" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/vtm/core#Person"
+      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Person"
     },
     "paidInGoods" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#paidInGoods",
@@ -239,10 +142,6 @@
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isWorkshopOf",
       "@type" : "@id"
     },
-    "isGreatGrandmotherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGreatGrandmotherOf",
-      "@type" : "@id"
-    },
     "oid" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#oid"
     },
@@ -255,26 +154,14 @@
       "@type" : "@id"
     },
     "PersonMention" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/vtm/core#PersonMention"
+      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#PersonMention"
     },
     "partialAmount" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#partialAmount",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "isAuntOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isAuntOf",
-      "@type" : "@id"
-    },
-    "businessRelation" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#businessRelation",
-      "@type" : "@id"
-    },
-    "isSonInLawOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isSonInLawOf",
-      "@type" : "@id"
-    },
-    "isGranddaughterOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGranddaughterOf",
+    "personProperties" : {
+      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#personProperties",
       "@type" : "@id"
     },
     "AppellationComponent" : {
@@ -293,10 +180,6 @@
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#onMultiplePages",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
-    "isUncleOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isUncleOf",
-      "@type" : "@id"
-    },
     "hasSalaryProgression" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasSalaryProgression",
       "@type" : "@id"
@@ -307,86 +190,31 @@
     "ConditionType" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#ConditionType"
     },
-    "isFatherInLawOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isFatherInLawOf",
-      "@type" : "@id"
-    },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
-    },
-    "EntityMention" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/vtm/core#EntityMention"
     },
     "WorkshopMention" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#WorkshopMention"
     },
-    "isApprenticeOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isApprenticeOf",
-      "@type" : "@id"
-    },
     "Profession" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Profession"
-    },
-    "isGreatGranddaughterOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGreatGranddaughterOf",
-      "@type" : "@id"
     },
     "isConditionOf" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isConditionOf",
       "@type" : "@id"
     },
-    "hasFunction" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasFunction",
-      "@type" : "@id"
-    },
     "denunciationDate" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#denunciationDate"
-    },
-    "hasApprentice" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasApprentice",
-      "@type" : "@id"
-    },
-    "isGodmotherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGodmotherOf",
-      "@type" : "@id"
-    },
-    "isGrandmotherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGrandmotherOf",
-      "@type" : "@id"
-    },
-    "isPartnerOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isPartnerOf",
-      "@type" : "@id"
     },
     "details" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#details",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "genericReference" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#genericReference",
-      "@type" : "@id"
-    },
-    "isColleagueOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isColleagueOf",
-      "@type" : "@id"
-    },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
-    "isSisterInLawOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isSisterInLawOf",
-      "@type" : "@id"
-    },
-    "relationProperties" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#relationProperties",
-      "@type" : "@id"
-    },
     "Entity" : {
       "@id" : "http://vocab.dhlab.epfl.ch/vtm/core#Entity"
-    },
-    "isMotherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isMotherOf",
-      "@type" : "@id"
     },
     "HostingCondition" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#HostingCondition"
@@ -412,10 +240,6 @@
     "conditionsDataProperties" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#conditionsDataProperties"
     },
-    "isSonOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isSonOf",
-      "@type" : "@id"
-    },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
@@ -430,35 +254,11 @@
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#sestiere_literal",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "documentRelation" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#documentRelation",
-      "@type" : "@id"
-    },
-    "hasMaster" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasMaster",
-      "@type" : "@id"
-    },
-    "hasComponent" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/vtm/core#hasComponent",
-      "@type" : "@id"
-    },
     "moneyInformation" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#moneyInformation"
     },
     "Collectivename" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#Collectivename"
-    },
-    "isWidowOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isWidowOf",
-      "@type" : "@id"
-    },
-    "isHusbandOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isHusbandOf",
-      "@type" : "@id"
-    },
-    "isStepmotherOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isStepmotherOf",
-      "@type" : "@id"
     },
     "hasLocation" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasLocation",
@@ -487,20 +287,8 @@
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#hasResidence",
       "@type" : "@id"
     },
-    "isSisterOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isSisterOf",
-      "@type" : "@id"
-    },
-    "isMotherInLawOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isMotherInLawOf",
-      "@type" : "@id"
-    },
     "RoleType" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#RoleType"
-    },
-    "isGrandsonOf" : {
-      "@id" : "http://vocab.dhlab.epfl.ch/garzoni#isGrandsonOf",
-      "@type" : "@id"
     },
     "conditionType" : {
       "@id" : "http://vocab.dhlab.epfl.ch/garzoni#conditionType",
